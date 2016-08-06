@@ -1,0 +1,234 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="niu.jpg" rel="icon" type="image/x-icon" />
+<script language="javascript">
+window.onload = function() {
+document.getElementById('hideLabel13').style.display = 'none';
+document.getElementById('hideLabel14').style.display = 'none';
+}
+function hideFields2(){
+document.getElementById('hideLabel13').style.display = 'none';
+document.getElementById('hideLabel14').style.display = 'none';
+}
+function showFields2(){
+document.getElementById('hideLabel13').style.display = 'block';
+document.getElementById('hideLabel14').style.display = 'block';
+}
+function validateForm() {
+	var x = document.forms["signup"]["name"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your name");
+		return false;
+	}
+	/*var x = document.forms["signup"]["gender"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your gender");
+		return false;
+	}*/
+	var x = document.forms["signup"]["username"].value;
+	if (x == null || x == "")
+	{
+		alert("Please Select a username");
+		return false;
+	}	var x = document.forms["signup"]["password"].value;
+	if (x == null || x == "")
+	{
+		alert("Please Select a password");
+		return false;
+	}	
+	var x = document.forms["signup"]["phone"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your phone number");
+		return false;
+	}
+	
+	var x = document.forms["signup"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Please enter a valid e-mail address");
+        return false;
+    }
+	
+	var x = document.forms["signup"]["dcdq"].value;
+	if (x == null || x == "")
+	{
+		alert("Please select valid DCDQ option");
+		return false;
+	}
+	
+		var x = document.forms["signup"]["address"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your address");
+		return false;
+	}
+		var x = document.forms["signup"]["city"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your city");
+		return false;
+	}
+	
+	if (document.getElementById("state").selectedIndex == 0){
+       alert("Please select your State");
+	   return false;
+    }
+		var x = document.forms["signup"]["zip"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your zip");
+		return false;
+	}	
+}
+</script>
+</head>
+<body>
+<div id = "grad1">
+<div class = "background">
+<table width="85%">
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><img src ="logo.jpg" alt= "niu" height= "100" width= "750"></td>
+</tr>
+</table>
+<div id="menu">
+<ul>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="quiltapply.html">Apply Online</a></li>
+<li><a href="awards.html">Awards List</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="signin.html">Sign In</a></li>
+</ul>
+</div>
+<h2 align="center">SIGN UP</h2>
+<hr>
+<br>
+<form name="signup" action ="signup.php" method="POST" onsubmit=" return validateForm()">
+<table align="center">
+<tr>
+<td colspan="2">
+<span style="color:#7EC0EE;font:verdana">Please provide your information.</span>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<tr>
+<td><br><span style="color:#7EC0EE;font:verdana">You want to signup as<hr></td>
+<td> <input type="radio" name="membertype" value="ayes"onclick="showFields2();" >Applicant
+<input type="radio" name="membertype" value="ano" onclick="hideFields2();" checked>Vendor
+</td></span>
+</tr>
+<tr>
+<td>Name :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Gender :</td>
+<td><input type="radio" name="gender" checked>Male<input type="radio" name="gender">Female</td>
+</tr>
+<tr>
+<td>Select Username :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr>
+<td>Select Password :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td>Phone :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="phone"></td>
+</tr>
+<tr>
+<td>E-mail :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="email"></td>
+</tr>
+<tr>
+<td id="hideLabel13">Are you DCDQ :<span style="color:#FF0000">&#42;</span></td>
+<td id="hideLabel14"><input type="radio" name="dcdq" checked>Yes<input type="radio" name="dcdq">No</td>
+</tr>
+<tr>
+<td>Street Address :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="address"></td>
+</tr>
+<tr>
+<td>City :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="password" name="city"></td>
+</tr>
+<tr>
+<td>State :<span style="color:#FF0000">&#42;</span></td>
+<td><select id="state" name="state" style="width: 95px">
+	<option value="">Select</option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>
+</tr>
+<tr>
+<td>Zip :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="zip"></td>
+</tr>
+</table>
+<br>
+<center>
+<input type="submit" value="Submit"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="reset" value="Reset"/>
+ <br>
+<br>
+</center></form> 
+</div>

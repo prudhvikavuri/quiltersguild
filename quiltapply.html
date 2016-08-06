@@ -1,0 +1,295 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="niu.jpg" rel="icon" type="image/x-icon" />
+<script language="javascript">
+window.onload = function() {
+document.getElementById('hideLabel').style.display = 'none';
+document.getElementById('hideLabel1').style.display = 'none';
+document.getElementById('hideLabel2').style.display = 'none';
+document.getElementById('hideLabel3').style.display = 'none';
+document.getElementById('hideLabel4').style.display = 'none';
+document.getElementById('hideLabel5').style.display = 'none';
+document.getElementById('hideLabel6').style.display = 'none';
+document.getElementById('hideLabel7').style.display = 'none';
+document.getElementById('hideLabel8').style.display = 'none';
+document.getElementById('hideLabel9').style.display = 'none';
+document.getElementById('hideLabel10').style.display = 'none';
+document.getElementById('hideLabel11').style.display = 'none';
+document.getElementById('hideLabel12').style.display = 'none';
+}
+function hideFields(){
+document.getElementById('hideLabel').style.display = 'none';
+document.getElementById('hideLabel1').style.display = 'none';
+document.getElementById('hideLabel2').style.display = 'none';
+document.getElementById('hideLabel3').style.display = 'none';
+document.getElementById('hideLabel4').style.display = 'none';
+document.getElementById('hideLabel5').style.display = 'none';
+document.getElementById('hideLabel6').style.display = 'none';
+document.getElementById('hideLabel7').style.display = 'none';
+document.getElementById('hideLabel8').style.display = 'none';
+document.getElementById('hideLabel9').style.display = 'none';
+document.getElementById('hideLabel10').style.display = 'none';
+}
+function hideFields1(){
+document.getElementById('hideLabel11').style.display = 'none';
+document.getElementById('hideLabel12').style.display = 'none';
+}
+function showFields(){
+document.getElementById('hideLabel').style.display = 'block';
+document.getElementById('hideLabel1').style.display = 'block';
+document.getElementById('hideLabel2').style.display = 'block';
+document.getElementById('hideLabel3').style.display = 'block';
+document.getElementById('hideLabel4').style.display = 'block';
+document.getElementById('hideLabel5').style.display = 'block';
+document.getElementById('hideLabel6').style.display = 'block';
+document.getElementById('hideLabel7').style.display = 'block';
+document.getElementById('hideLabel8').style.display = 'block';
+document.getElementById('hideLabel9').style.display = 'block';
+document.getElementById('hideLabel10').style.display = 'block';
+}
+function showFields1(){
+document.getElementById('hideLabel11').style.display = 'block';
+document.getElementById('hideLabel12').style.display = 'block';
+}
+
+function validateForm() {
+	var x = document.forms["quilt"]["quiltname"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter quilt name");
+		return false;
+	}
+	var x = document.forms["quilt"]["date"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter quilt completion date");
+		return false;
+	}
+	/*var x = document.forms["quilt"]["description"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter a description");
+		return false;
+	}	*/
+	var x = document.forms["quilt"]["speciality"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter quilt speciality");
+		return false;
+	}	
+	var x = document.forms["quilt"]["photo"].value;
+	if (x == null || x == "")
+	{
+		alert("Please upload quilt photo");
+		return false;
+	}
+	var x = document.forms["quilt"]["categoryname"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter category name");
+		return false;
+	}
+			/*var x = document.forms["quilt"]["categorydescription"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your address");
+		return false;
+	}*/
+		var x = document.forms["quilt"]["height"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter quilt height");
+		return false;
+	}
+	
+			var x = document.forms["quilt"]["width"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter quilt width");
+		return false;
+	}
+			var x = document.forms["quilt"]["membertype"].value;
+	if (x == null || x == "")
+	{
+		alert("Please select if you want the quilt to be appraised");
+		return false;
+	}
+			var x = document.forms["quilt"]["membertype1"].value;
+	if (x == null || x == "")
+	{
+		alert("Please select if you want the quilt to be judged");
+		return false;
+	}
+			var x = document.forms["quilt"]["cardtype"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter card type");
+		return false;
+	}
+			var x = document.forms["quilt"]["cardno"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter card number");
+		return false;
+	}
+			var x = document.forms["quilt"]["cardname"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter name on the card");
+		return false;
+	}
+				var x = document.forms["quilt"]["expirydate"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter card expiry date");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<div id = "grad1">
+<div class = "background">
+<table width="85%">
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><img src ="logo.jpg" alt= "niu" height= "100" width= "750"></td>
+</tr>
+</table>
+<div id="menu">
+<ul>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="quiltapply.html">Apply Online</a></li>
+<li><a href="awards.html">Awards</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="logout.html">Log Out</a></li>
+</ul>
+</div>
+<h2 align="center">Quilt Show Application Form</h2>
+<hr>
+<br>
+<form name="quilt" action ="quilt.php" method="POST" onsubmit=" return validateForm()">
+<table align="center">
+<tr>
+<td colspan="2">
+<span style="color:#7EC0EE;font:verdana">Please provide quilt information so that we can register you for the Quilt Show.</span>
+</td>
+</tr>
+<tr><td colspan="2"><br/></td></tr>
+<tr>
+<td colspan="2">
+<span style="color:#7EC0EE;font:verdana">Quilt Information</span><hr>
+</td>
+</tr>
+<tr>
+<td>Name :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="quiltname"></td>
+</tr>
+<tr>
+<!-- this only works in chrome, but will still allow user to type in date w/firefox-->
+<td>Completion Date :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="date" name="date" id="date" required/></td>
+</tr>
+<tr>
+<td>Description :<span style="color:#FF0000">&#42;</span></td>
+<td><textarea cols="28 rows="4" type="text" name="description"></textarea></td>
+</tr>
+<tr>
+<td>Speciality :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="speciality"></td>
+</tr>
+<tr>
+<td>Select Photo :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="file"  id="photo" accept="image/*">
+<input type="submit" value="Upload">
+</tr>
+<tr>
+<tr>
+<td colspan="2">
+<br><span style="color:#7EC0EE;font:verdana">Quilt Category</span><hr>
+</td>
+</tr>
+<tr>
+<td>Name :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="categoryname"></td>
+</tr>
+<td>Description :<span style="color:#FF0000">&#42;</span></td>
+<td><textarea cols="28 rows="4" type="text" name="categorydescription"></textarea></td>
+</tr>
+<tr>
+<td>Size :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="height" size="4" placeholder="Height">
+<input type="text" name="width" size="4" placeholder="Width"></td>
+</tr>
+<td colspan="2">
+<!--<tr>
+<td><br><span style="color:#7EC0EE;font:verdana">Want Quilt to be Appraised<hr></td>
+<td> <input type="radio" name="membertype" value="ayes">Yes
+<input type="radio" name="membertype" value="ano"checked>No
+</td></span>
+</tr>-->
+<tr>
+<td><br><span style="color:#7EC0EE;font:verdana">Want Quilt to be Appraised<hr></td>
+<td> <input type="radio" name="membertype" value="ayes"onclick="showFields1();" >Yes
+<input type="radio" name="membertype" value="ano" onclick="hideFields1();" checked>No
+</td></span>
+</tr>
+<tr>
+<!-- this only works in chrome, but will still allow user to type in date w/firefox-->
+<td id="hideLabel11">Appraisal Date :<span style="color:#FF0000">&#42;</span></td>
+<td id="hideLabel12"><input type="date" name="appdate" id="appdate" required/></td>
+</tr>
+<tr>
+<td colspan="2">
+<tr>
+<td><br><span style="color:#7EC0EE;font:verdana">Want Quilt to be Judged<hr></td>
+<td> <input type="radio" name="membertype1" value="jyes" onclick="showFields();" >Yes
+<input type="radio" name="membertype1" value="jno" onclick="hideFields();" checked>No
+</td></span>
+</tr>
+<tr>
+<td colspan="2"  id="hideLabel6">
+<br><span style="color:#7EC0EE;font:verdana">Payment Details</span><hr>
+</td>
+</tr>
+<tr>
+<td id="hideLabel1">Card Type :<span style="color:#FF0000">&#42;</span></td>
+<td id="hideLabel2"><input type="cardtype"  id="cardtype" required/></td>
+</tr>
+<tr>
+<!-- this only works in chrome, but will still allow user to type in date w/firefox-->
+<td id="hideLabel4">Card No. :<span style="color:#FF0000">&#42;</span></td>
+<td id="hideLabel5"><input type="cardno" id="cardno" required/></td>
+</tr>
+<tr>
+<td id="hideLabel">Name on card :<span style="color:#FF0000">&#42;</span></td>
+<td id="hideLabel3"><input type="cardname"  id="cardname" required/></td>
+</tr>
+<tr>
+<!-- this only works in chrome, but will still allow user to type in date w/firefox-->
+<td id="hideLabel7">Expiry Date :<span style="color:#FF0000">&#42;</span></td>
+<td id="hideLabel8"><input type="date" name="expirydate" id="expirydate" required/></td>
+</tr>
+<tr>
+<td id="hideLabel9">Amount :<span style="color:#FF0000">&#42;</span></td>
+<td id="hideLabel10"><input type="text" name="amount" value="10" disabled></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit"/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" value = "Reset"/>
+</td>
+</tr>
+</table>
+</form> 
+ <footer>
+<address>&copy; Copyright 2015 All Rights Reserved <br>NIU Quilters Guild</address>
+</footer> 
+</div>

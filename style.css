@@ -1,0 +1,129 @@
+#grad1 
+{
+background: -webkit-linear-gradient(#7EC0EE,#FFFFFF); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#7EC0EE,#FFFFFF); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#7EC0EE,#FFFFFF); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#7EC0EE,#FFFFFF); /* Standard syntax (must be last) */
+background-image:url(background.jpg);
+}
+.background {
+	background-color: #FFFFFF;
+	width: 950px;
+	background-position: center;
+	background-align: top;
+	margin: 0 auto;
+	filter: alpha(opacity=60);
+	/*border: 2px solid #33A1DE;*/
+	color: #000000;	
+	}
+#menu li.active 
+{
+  display: inline;
+  border-bottom: 3px solid #00b8fd;
+  float: left;
+  margin: 0;
+} 
+p.padding {
+	padding-top: 5px;
+	padding-right: 50px;
+	padding-left: 30px;
+	padding-bottom: 5px;
+	line-height: 150%;
+	font-family: verdana, Helvetica, sans-serif;
+	text-align: justify;
+	text-justify: inter-word;
+}
+#menu ul 
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 950px;
+  position: relative;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  background: #353535;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #353535;
+  zoom: 1;
+}
+#menu ul:before 
+{
+ content: '';
+ display: block;
+}
+#menu ul:after 
+{
+  content: '';
+  display: table;
+  clear: both;
+}
+#menu li 
+{
+  display: block;
+  float: left;
+  margin: 0;
+  color: #999999;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px 7px 25px;
+  border-bottom: 3px solid transparent;
+}
+#menu li a 
+{
+  display: block;
+  float: left;
+  color: #999999;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+#menu li a:hover 
+{
+ color: #FFFFFF;
+ border-bottom: 3px solid #00b8fd;
+}
+#rightAlign
+ {
+ margin: 20px 20px 20px 50px;
+ padding: 10px 10px 20px 225px;
+ }
+ #address
+ {
+ float: left;
+ text-align : left;
+ margin: 20px 50px 20px 0px;
+ padding: 20px 20px 10px 100px;
+ }
+#tablestyle table
+{
+	padding: 8px;
+	border-color:#C6F;
+	border:#300;
+}
+#b1{
+	font-weight:600;
+	}
+#tablestyle  tr td
+{
+	color: #000000;
+	font-weight: 400;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+footer {
+width: 100%;
+background: #336699;
+float: left;
+margin: 0 0 .5% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
+
+address {
+font-size : 16px; 
+text-align : center; 
+color: #efefef;
+padding: 1% 0;
+text-shadow: 1px 1px 0px #202020
+}

@@ -1,0 +1,132 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="niu.jpg" rel="icon" type="image/x-icon" />
+<script language="javascript">
+function validateForm() {
+			var x = document.forms["vendor"]["lotsize"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter lot size");
+		return false;
+	}
+			var x = document.forms["vendor"]["merchandise"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your merchandise");
+		return false;
+	}
+			var x = document.forms["vendor"]["cardtype"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter card type");
+		return false;
+	}
+			var x = document.forms["vendor"]["cardno"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter card number");
+		return false;
+	}
+			var x = document.forms["vendor"]["cardname"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter name on the card");
+		return false;
+	}
+				var x = document.forms["vendor"]["expirydate"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter card expiry date");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<div id = "grad1">
+<div class = "background">
+<table width="85%">
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><img src ="logo.jpg" alt= "niu" height= "100" width= "750"></td>
+</tr>
+</table>
+<div id="menu">
+<ul>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="vendorapply.html">Apply Online</a></li>
+<li><a href="awards.html">Awards</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="logout.html">Log Out</a></li>
+</ul>
+</div>
+<h2 align="center">Vendor Application Form</h2>
+<hr>
+<br>
+<form name="vendor" action ="vendor.php" method="POST" onsubmit=" return validateForm()"'>
+<table align="center">
+<tr>
+<td colspan="2">
+<span style="color:#7EC0EE;font:verdana">Please provide quilt information so that we can register you for the Quilt Show.</span>
+</td>
+</tr>
+<tr><td colspan="2"><br/></td></tr>
+<tr>
+<td colspan="2">
+<span style="color:#7EC0EE;font:verdana">Lot & Merchandise Information</span><hr>
+</td>
+</tr>
+<tr>
+<td>Lot-Size :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="lotsize"></td>
+</tr>
+<tr>
+<td>Merchandise :<span style="color:#FF0000">&#42;</span></td>
+<td><textarea cols="28 rows="4" type="text" name="merchandise"></textarea></td>
+</tr>
+<tr>
+<td colspan="2">
+<br><span style="color:#7EC0EE;font:verdana">Payment Details</span><hr>
+</td>
+</tr>
+<tr>
+<td>Card Type :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text"  id="cardtype" required/></td>
+</tr>
+<tr>
+<!-- this only works in chrome, but will still allow user to type in date w/firefox-->
+<td>Card No. :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" id="cardno" required/></td>
+</tr>
+<tr>
+<td>Name on card :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text"  id="cardname" required/></td>
+</tr>
+<tr>
+<!-- this only works in chrome, but will still allow user to type in date w/firefox-->
+<td>Expiry Date :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="date" name="expirydate" id="expirydate" required/></td>
+</tr>
+<tr>
+<td>Amount :<span style="color:#FF0000">&#42;</span></td>
+<td><input type="text" name="amount" value="10" disabled></td>
+</tr>
+</table>
+<br>
+<center>
+<input type="submit" value="Submit"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="reset" value="Reset"/>
+ <br>
+<br>
+</center>
+ <footer>
+<address>&copy; Copyright 2015 All Rights Reserved <br>NIU Quilters Guild</address>
+</footer> 
+</form>
+</div>

@@ -1,0 +1,94 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="niu.jpg" rel="icon" type="image/x-icon" />
+<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[3] = new Image() // create new instance of image object
+slideimages[3].src = "Group2.jpg" // set image object src property to an image's src, preloading that image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "Group4.jpg"
+slideimages[0] = new Image()
+slideimages[0].src = "Group3.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "group6.gif"
+slideimages[4] = new Image()
+slideimages[4].src = "group5.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "group2.gif"
+slideimages[6] = new Image()
+slideimages[6].src = "group6.jpg"
+slideimages[7] = new Image()
+slideimages[7].src = "group7.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "group4.gif"
+slideimages[9] = new Image()
+slideimages[9].src = "group3.gif"
+slideimages[10] = new Image()
+slideimages[10].src = "group8.jpg"
+slideimages[11] = new Image()
+slideimages[11].src = "group1.gif"
+slideimages[12] = new Image()
+slideimages[12].src = "group5.gif"
+</script>
+</head>
+<body>
+<div id="grad1">
+<div class = "background">
+<div id = "header">
+<table width="85%">
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><img src ="logo.jpg" alt= "niu" height= "100" width= "750"></td>
+</tr>
+</table></div> 
+<div id="menu">
+<ul>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="awards.html">Awards</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="signin.html">Sign in</a></li>
+<li><a href="signup.html">Sign up</a></li>
+</ul>
+</div>
+<img src="1.jpg" id="slide"  />
+<script type="text/javascript">
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<3)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+</script>
+<h2><center><font size ="5" color="#7EC0EE" face="Georgia" > Welcome to the official website of the
+NIU County Quilter's Guild </font> </center> </h2>
+<h2><center><font size ="5" color="#7EC0EE" face="Georgia" > <b><u> About us </u></b></font> </center> </h2>
+<p class="padding">The NIU Quilters Guild (NIUQG) is a 501 c (3) not-for-profit organization founded to promote the fellowship among those interested in quilts and quilt making.  Every year the Guild engages in service projects for the community.  One meeting a year is devoted to working together on a service project.  Of notable significance is the Guilds continuous donation of baby quilts to the Rockford Memorial Hospital Neonatal Unit.  Over the years the Guild has donated hundreds of baby quilts that are placed on the Neonatal incubators and then go home with the babies.  The Guild members have also made Quillows for the DeKalb County Sheriffs Department.  A Quillow is a quilt that folds into a pocket and makes a pillow.  The Quillows are kept in the squad cars and given to children by the officers during times of trauma.  The Guild members also make wheelchair pockets that are donated to local nursing homes for use by the nursing home residents that are confined to wheelchairs.  Each year, Christmas ornaments are donated to local nursing homes.  Often, the guild is asked to have volunteers demonstrate and/or teach quilting at community and school events.  Individual members give their time as fits their schedules.
+<br/>
+<br/>
+Approximately every other year the Guild sponsors a Quilt Show to raise funds to support the above-mentioned Guild activities and for donation to charity.  In recent years the charity was through the local hospital foundation.  Our donation initiated a program to make mammograms available to women in DeKalb County who could not afford one.  Other charities have been for a scholarship in the name of one of the Guilds founders, Charlotte Sundly and to shelters or safe houses in DeKalb County for women and their children.
+</p>
+ <footer>
+<address>&copy; Copyright 2015 All Rights Reserved <br>NIU Quilters Guild</address>
+</footer> 
+ </div>
+</div>
+</body>
+</html>

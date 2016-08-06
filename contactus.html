@@ -1,0 +1,91 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="niu.jpg" rel="icon" type="image/x-icon" />
+<script language="javascript">
+function validateForm() {
+	var x = document.forms["contact"]["firstname"].value;
+	if (x == null || x == "")
+	{
+		alert("Please enter your first name");
+		return false;
+	}
+	
+	var x = document.forms["contact"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Please enter a valid e-mail address");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<div id = "grad1">
+<div class = "background">
+<table width="85%">
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td><img src ="logo.jpg" alt= "niu" height= "100" width= "750"></td>
+</tr>
+</table>
+<div id="menu">
+<ul>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html"></a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="awards.html">Awards</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="signin.html">Sign in</a></li>
+<li><a href="signup.html">Sign up</a></li>
+</ul>
+</div>
+<h2 align="center">CONTACT US</h2>
+<hr>
+<center>
+<p> <font color = "#7EC0EE"> <h3>  NIU Quilters Guild </h3> </font> 
+ <b>1425 W Lincoln Hwy <br>
+  Dekalb<br>
+  IL- 60115  <br> 
+  </b></p>
+  </center>
+<p> <font color = "#7EC0EE"> <h2> <center>  Mail Us -We are happy to read your comments through mail </center>   </h2> </font> </p>
+<br>
+<!--<p> <font color = "#7EC0EE"> <h2> <center>  Contact Us </center>   </h2> </font> </p>-->
+<form name = "contact" method= "post"  action="contact.php"  onsubmit=" return validateForm()"/>
+<table align ="center">
+<tr>
+<td> First name <span style="color:#FF0000">&#42;</span> </td>
+<td><input type="text" name="firstname" required /> </td>
+</tr>
+<tr>
+<td> Last name</td>
+<td><input type="text" name="lastname" required/> </td>
+</tr>
+<tr>
+<td> Email <span style="color:#FF0000">&#42;</span> </td>
+<td><input type="text" id='txtEmail' name='email'  > </td>
+</tr>
+
+<tr align = "center"> <td colspan = "2"> <textarea rows="4" cols="50"  placeholder = "How can We help you ??" >
+</textarea></td> </tr> 
+</table>
+<br>
+<center>
+<input type="submit" value="Submit"/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="reset" value="Reset"/>
+ <br>
+<br>
+</center>
+</form>
+<div id = "rightAlign"> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2968.072241977172!2d-88.773718!3d41.934298999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f2ac150707ca7%3A0x3bdfef7d190f7c00!2sNorthern+Illinois+University!5e0!3m2!1sen!2sus!4v1415750563011" width="400" height="300" frameborder="0" style="border:0"></iframe></div>
+ <footer>
+<address>&copy; Copyright 2015 All Rights Reserved <br>NIU Quilters Guild</address>
+</footer> 
+</div>
+</div>
